@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ねこったー</title>
+  </head>
+  <body>
+    <header>
+      <h1>ねこったー</h1>
+    </header>
+    <div class="contents">
+<!--        <form class="clearfix">
+        cat1.png">/cat1.png">
+        <textarea rows="4" cols="40"></textarea>
+        <div class="button-box">
+          <input type="submit">
+        </div>
+      </form> -->
+      <% @tweets.each do |tweet| %>
+        <div class="message clearfix">
+          <%= image_tag 'cat1.png' %>
+          <div class="message_box">
+            <p class="user_name">
+              野良猫1号
+            </p>
+            <p class="text">
+              <%= tweet.text %>
+            </p>
+          </div>
+        </div>
+      <% end %>
+      </div>
+  </body>
+</html>
